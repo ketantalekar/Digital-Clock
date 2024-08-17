@@ -1,0 +1,104 @@
+.grey-qo-regular {
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+}
+.heading {
+  font-family: "Grey Qo", cursive;
+  font-weight: 700; /* Set the font weight to bold */
+  font-size: 3em; /* Set the size of the heading */
+  color: #fff; /* Set the text color to white */
+  text-align: center; /* Center the heading */
+  margin-bottom: 40px; /* Add some space below the heading */
+  text-transform: uppercase; /* Set the text to uppercase */
+  letter-spacing: 0.1em; /* Add some spacing between the letters */
+}
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2f363e;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+#time {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+}
+#time .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#time .circle svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: #191919;
+  stroke-width: 4;
+  transform: translate(5px, 5px);
+}
+#time .circle svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+}
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+#time div span {
+  position: absolute;
+  transform: translateX(-50%) translateY(-10px);
+  font-size: 0.35em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#time .ap {
+  position: relative;
+  font-size: 1em;
+  transform: translate(-20px);
+}
+.dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.dots::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}

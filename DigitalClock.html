@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="digitalClockStyle.css" />
+    <title>Digital Clock</title>
+  </head>
+  <body class="grey-qo-regular">
+    <div class="heading">Digital Clock</div>
+    <div class="mainDiv">
+      <div id="time">
+        <div class="circle" style="--clr: #ff2972">
+          <div class="dots hr_dot"></div>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70" id="hh"></circle>
+          </svg>
+          <div id="hours">00</div>
+        </div>
+        <div class="circle" style="--clr: #fee800">
+          <div class="dots min_dot"></div>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70" id="mm"></circle>
+          </svg>
+          <div id="minutes">00</div>
+        </div>
+        <div class="circle" style="--clr: #04fc43">
+          <div class="dots sec_dot"></div>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70" id="ss"></circle>
+          </svg>
+          <div id="seconds">00</div>
+        </div>
+        <div class="ap">
+          <div id="ampm">AM</div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="digitalClock.js"></script>
+  </body>
+</html>
